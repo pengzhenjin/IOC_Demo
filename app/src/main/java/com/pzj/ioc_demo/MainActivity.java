@@ -22,6 +22,6 @@ public class MainActivity extends BaseActivity {
   @OnLongClick(R.id.btn)
   public boolean btnLongClick(View view) {
     Toast.makeText(this, "按钮长按了", Toast.LENGTH_SHORT).show();
-    return false;
+    return true; // 如果return false，则还会执行按钮的点击事件
   }
 }
